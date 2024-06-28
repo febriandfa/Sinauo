@@ -20,7 +20,7 @@ class MateriFactory extends Factory
             'nama' => $this->faker->name(),
             'jumlah' => $this->faker->randomDigit(),
             'deskripsi' => $this->faker->paragraph(),
-            'cover' => $this->faker->imageUrl(),
+            'cover' => $this->faker->randomElement(['placeholder-1.jpg', 'placeholder-2.jpg']),
         ];
     }
 }
