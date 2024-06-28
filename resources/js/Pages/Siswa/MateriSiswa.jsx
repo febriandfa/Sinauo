@@ -63,9 +63,10 @@ export default function MateriSiswa({ auth }) {
                                                 //         statusItem.status ===
                                                 //         "Selesai"
                                                 // )
-                                                (submateriIsSeen.length /
-                                                    item.submateri.length) *
-                                                100
+                                                (item.submateri.length != 0
+                                                    ? submateriIsSeen.length /
+                                                      item.submateri.length
+                                                    : 0) * 100
                                             }
                                         />
                                     </div>
