@@ -36,7 +36,9 @@ export default function DetailMateriSiswa({ auth }) {
                 <div className="w-[85%]">
                     <ProgressBar
                         progres={
-                            (submateriIsSeen.length / submateri.length) * 100
+                            (submateri.length != 0
+                                ? submateriIsSeen.length / submateri.length
+                                : 0) * 100
                         }
                     />
                     <p>
