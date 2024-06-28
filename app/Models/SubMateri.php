@@ -30,6 +30,6 @@ class SubMateri extends Model
     }
 
     public function isSeen() {
-        return $this->hasMany(SubmateriSeen::class, 'submateri_id', 'id');
+        return $this->hasMany(SubateriSeen::class, 'submateri_id', 'id');
     }
 }

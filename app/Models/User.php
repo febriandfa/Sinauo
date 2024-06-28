@@ -60,6 +60,6 @@ class User extends Authenticatable
 
     public function submateri()
     {
-        return $this->hasMany(Submateri::class);
+        return $this->hasMany(SubMateri::class);
     }
 }
