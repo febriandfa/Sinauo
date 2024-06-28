@@ -19,8 +19,8 @@ class ReferensiFactory extends Factory
         return [
             'judul' => $this->faker->sentence(),
             'sumber' => $this->faker->url(),
-            'cover' => $this->faker->imageUrl(),
-            'file' => $this->faker->url(),
+            'cover' => $this->faker->randomElement(['placeholder-1.jpg', 'placeholder-2.jpg']),
+            'file' => $this->faker->randomElement(['placeholder-1.pdf']),
 
 
         ];

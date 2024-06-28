@@ -21,8 +21,8 @@ class SubMateriFactory extends Factory
             'materi_id' => Materi::inRandomOrder()->first()->id,
             'nama' => $this->faker->name(),
             'deskripsi' => $this->faker->paragraph(),
-            'cover' => $this->faker->imageUrl(),
-            'file' => $this->faker->imageUrl(),
+            'cover' => $this->faker->randomElement(['placeholder-1.jpg', 'placeholder-2.jpg']),
+            'file' => $this->faker->randomElement(['placeholder-1.pdf']),
         ];
     }
 }

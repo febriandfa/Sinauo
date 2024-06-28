@@ -19,7 +19,7 @@ class TutorialFactory extends Factory
         return [
             'judul' => $this->faker->sentence(),
             'sumber' => $this->faker->url(),
-            'cover' => $this->faker->imageUrl(),
+            'cover' => $this->faker->randomElement(['placeholder-1.jpg', 'placeholder-2.jpg']),
         ];
     }
 }

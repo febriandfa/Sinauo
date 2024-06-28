@@ -16,8 +16,10 @@ class AbsensiFactory extends Factory
      */
     public function definition(): array
     {
+        $barcode = 'barcode.png';
+
         return [
-            'barcode' => $this->faker->imageUrl(),
+            'barcode' => $barcode,
             'link' => $this->faker->url(),
         ];
     }
